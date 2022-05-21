@@ -69,7 +69,7 @@ The concrete implementation is *RangerAuthorizer*. So here is the flow:
 
 
 ### Conclusions
-Currently, the mock APIs is mocking OAUTH and Policy management. However, it does provide clarity on the
+Currently, the mock API is mocking OAUTH and Policy management. However, it does provide clarity on the
 interception based policies enforcement. In application world, this type of authorization enforcement is quite
 a common practice.
 
