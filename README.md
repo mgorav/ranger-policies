@@ -73,7 +73,13 @@ Currently, the mock API is mocking OAUTH and Policy management. However, it does
 interception based policies enforcement. In application world, this type of authorization enforcement is quite
 a common practice.
 This service helps decouple authorization from a cloud based access management. As a consequence, provide abilities
-to write policies using Apache Ranger based data tagging (metadata). These metadata lives/resides in Metadata lake like collibra.
+to write policies using Apache Ranger based data tagging (metadata). These metadata lives/resides in Metadata lake like Collibra.
+
+With such a handy authorization service, taking AWS cloud, it's very simple to implement policies driven data access architecture like shown below:
+
+![Ranger Architecture](deltasharing1.png)
+
+Enjoy!
 
 
 ### Tech stack usedReference Documentation
