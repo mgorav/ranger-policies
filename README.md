@@ -75,9 +75,12 @@ a common practice.
 This service helps decouple authorization from a cloud based access management. As a consequence, provide abilities
 to write policies using Apache Ranger based data tagging (metadata). These metadata lives/resides in Metadata lake like Collibra.
 
-With such a handy authorization service, taking AWS cloud, it's very simple to implement policies driven data access architecture like shown below:
+With such a handy authorization service, taking AWS cloud as an example, it's very simple to implement policies driven data access architecture like shown below:
 
 ![Ranger Architecture](deltasharing1.png)
+
+Because current limitation of Delta sharing, policies can be only applied at object level and it's not possible to 
+provide fine-grained ACL.
 
 Enjoy!
 
