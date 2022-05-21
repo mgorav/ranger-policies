@@ -21,7 +21,7 @@ The following picture shows the architecture:
 
 The above architecture is a microservices' architecture, where any access to resources on the datalake/lakehouse etc are 
 intercepted and forwarded to /authorize REST apis, which then connect to your company ecosystem to enforce policies. A 
-classical example are applying GDPC compliance based policies.
+classical example are applying GDPR compliance based policies.
 
 The starting point of the design implementation, is a notion of *Authorizer*. This class is central to the Ranger plugin.
 The concrete implementation is *RangerAuthorizer*. So here is the flow:
