@@ -17,11 +17,21 @@ providing abilities to integrate with the companies' ecosystem like catalog & au
 
 The following picture shows the architecture:
 
-![Ranger Architecture](ranger-architecture.png)
+![Ranger Architecture](ranger-service-architecture.png)
 
 The above architecture is a microservices' architecture, where any access to resources on the datalake/lakehouse etc are 
 intercepted and forwarded to /authorize REST apis, which then connect to your company ecosystem to enforce policies. A 
 classical example are applying GDPC compliance based policies.
+
+The starting point of the design implementation, is a notion of *Authorizer*. This class is central to the Ranger plugin.
+The concrete implementation is *RangerAuthorizer*. So here is the flow:
+- All the calls to access a resource will be intercepted by Ranger and passed to RangerAuthorizer
+- RangerAuthorizer forward the call *CustomPolicyDelegator*.
+- CustomPolicyDelegator provides configurable REST service as outlined below, in the application.properties file
+- The configured service takes the ownership of authorization access looking the metadata information along with user & groups 
+  it belongs to along with policies configured to  provide access. 
+
+![Ranger Architecture](class-modelling.png)
 
 ### How to build the Ranger plugin
 
