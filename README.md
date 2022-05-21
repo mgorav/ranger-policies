@@ -13,7 +13,7 @@ with such an ecosystem.
 
 Apache Ranger architecture provides ability to provide custom plugin to accomplish this. These plugins are activated at 
 start/launch of the JVM. Using bytecode weaving, all access call to the resources are redirected to plugin, hence 
-providing abilities to integrate with the companies' ecosystem.
+providing abilities to integrate with the companies' ecosystem like catalog & authentication systems.
 
 The following picture shows the architecture:
 
