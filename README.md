@@ -7,6 +7,7 @@ metadata information like data owner, data classification etc etc, based your co
 driven design. Its ideal to enforce policies based on this cataloging information. This helps two folds:
 - enforce policies based on metadata
 - centrally govern the policies
+
 However, now the question arises, how can we integrate Ranger
 with such an ecosystem.
 
