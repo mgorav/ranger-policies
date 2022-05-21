@@ -4,7 +4,10 @@ data warehouse  (Hive, Snowflake) etc using Apache Ranger.
 
 Apache Ranger helps in applying interception based policies to the resources. However, typically company uses, catalogs to store the 
 metadata information like data owner, data classification etc etc, based your companies domain classification using domain 
-driven design. Now the question arises, how can we integrate Ranger
+driven design. Its ideal to enforce policies based on this cataloging information. This helps two folds:
+- enforce policies based metadata
+- centrally govern the policies
+However, now the question arises, how can we integrate Ranger
 with such an ecosystem.
 
 Apache Ranger architecture provides ability to provide custom plugin to accomplish this. These plugins are activated at 
