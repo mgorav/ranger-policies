@@ -6,8 +6,8 @@ data warehouse  (Hive, Snowflake) etc using Apache Ranger.
 Apache Ranger documentation has extensively covered that.
 
 Apache Ranger helps in applying interception based policies to the resources. However, typically company uses, catalogs to store the 
-metadata information like data owner, data classification etc etc, based your companies domain classification using domain 
-driven design. Its ideal to enforce policies based on this cataloging information. This helps two folds:
+metadata information like data owner, data classification etc etc, based on your companies' domain classification using domain 
+driven design. It's ideal to enforce policies based on this cataloging information. This helps two folds:
 - enforce policies based on metadata
 - centrally govern the policies
 
@@ -72,6 +72,8 @@ The concrete implementation is *RangerAuthorizer*. So here is the flow:
 Currently, the mock API is mocking OAUTH and Policy management. However, it does provide clarity on the
 interception based policies enforcement. In application world, this type of authorization enforcement is quite
 a common practice.
+This service helps decouple authorization from a cloud based access management. As a consequence, provide abilities
+to write policies using Apache Ranger based data tagging (metadata). These metadata lives/resides in Metadata lake like collibra.
 
 
 ### Tech stack usedReference Documentation
