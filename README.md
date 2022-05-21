@@ -12,6 +12,7 @@ start/launch of the JVM. Using bytecode weaving, all access call to the resource
 providing abilities to integrate with the companies' ecosystem.
 
 The following picture shows the architecture:
+
 ![Ranger Architecture](ranger-architecture.png)
 
 
