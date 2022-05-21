@@ -19,21 +19,25 @@ The following picture shows the architecture:
 
 ![Ranger Architecture](ranger-architecture.png)
 
+The above architecture is a microservices' architecture, where any access to resources on the datalake/lakehouse etc are 
+intercepted and forwarded to /authorize REST apis, which then connect to your company ecosystem to enforce policies. A 
+classical example are applying GDPC compliance based policies.
+
 ### How to build the Ranger plugin
-- rangercustomplugin 
-  - Build assemble plugin
+
+- Build assemble plugin
   ````shell
   mvn clean package -DskipTests
   ````
-  - Following files created by the build will be required to setup
-    - target/rangercustomplugiin-0.0.1-SNAPSHOT.jar
-  - move the jar to apache ranger installation
-  - specify following property so that delegator kicks in the file appliation.properties
-    ````
-    com.gonnect.policy.delegator.controller=http://localhost:8080/authorize
-    ````  
+- Following files created by the build will be required to setup
+  - target/rangercustomplugiin-0.0.1-SNAPSHOT.jar
+- move the jar to apache ranger installation
+- specify following property so that delegator kicks in the file appliation.properties
+  ````
+  com.gonnect.policy.delegator.controller=http://localhost:8080/authorize
+  ````  
 ### Setup RESTful App
-- Run the app as
+- Run the app using following command:
   ````
     java -jar rangercustomplugin-0.0.1-SNAPSHOT.jar
   ````
