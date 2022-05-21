@@ -2,6 +2,9 @@
 This blog demonstrates policies based access to the resource on the datalake/lakehouse, topics/streams, 
 data warehouse  (Hive, Snowflake) etc using Apache Ranger.
 
+*NOTE* The blog will not go in details about how copy jars in the Ranger lib, so that it can be launched as a javaagent. 
+Apache Ranger documentation has extensively ocvered that.
+
 Apache Ranger helps in applying interception based policies to the resources. However, typically company uses, catalogs to store the 
 metadata information like data owner, data classification etc etc, based your companies domain classification using domain 
 driven design. Its ideal to enforce policies based on this cataloging information. This helps two folds:
