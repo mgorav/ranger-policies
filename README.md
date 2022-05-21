@@ -1,4 +1,4 @@
-# Customized Policies Using Ranger 
+# Customized Policies Using Ranger - APIs driven policies access management
 This blog demonstrates policies based access to the resource on the datalake/lakehouse, topics/streams, 
 data warehouse  (Hive, Snowflake) etc using Apache Ranger.
 
