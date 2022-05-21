@@ -1,11 +1,11 @@
-# Custom Ranger Policy 
+# Customized Policies Using Ranger 
 This blog demonstrates policies based access to the resource on the datalake/lakehouse, topics/streams, 
 data warehouse  (Hive, Snowflake) etc using Apache Ranger.
 
 Apache Ranger helps in applying interception based policies to the resources. However, typically company uses, catalogs to store the 
 metadata information like data owner, data classification etc etc, based your companies domain classification using domain 
 driven design. Its ideal to enforce policies based on this cataloging information. This helps two folds:
-- enforce policies based metadata
+- enforce policies based on metadata
 - centrally govern the policies
 However, now the question arises, how can we integrate Ranger
 with such an ecosystem.
