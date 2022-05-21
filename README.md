@@ -79,7 +79,7 @@ With such a handy authorization service, taking AWS cloud as an example, it's ve
 
 ![Ranger Architecture](deltasharing1.png)
 
-Because current limitation of Delta sharing, policies can be only applied at object level and it's not possible to 
+Because of current limitation of Delta sharing, policies can be only applied at object level and it's not possible to 
 provide fine-grained ACL.
 
 Enjoy!
